@@ -29,7 +29,7 @@ export const Card = ({img}) => {
           {
             productos && productos.length > 0 ? productos.map((elemento) => (
               <div className="flex flex-col gap-3" key={elemento.id} >
-                <p className="text-black text-4xl font-bold">Oversize</p>
+                <p className="text-black text-4xl font-bold">{elemento.id}</p>
                 <p className="text-black font-medium text-xl" > <span className="text-2xl" >Color: </span>{elemento.datos.Color}</p>  
                 <p className="text-black font-medium text-xl" > <span className="text-2xl" >Talla: </span>{elemento.datos.Tallas}</p>  
                 <p className="text-black font-medium text-xl" > <span className="text-2xl" >Precio:</span> <span className="text-green-500">${elemento.datos.Precio}</span></p>
