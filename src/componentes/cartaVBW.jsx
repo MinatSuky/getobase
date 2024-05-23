@@ -38,7 +38,7 @@ export const Bmw = ({img}) => {
                         </div>
                     </div>
                 ))
-                    : "Cargando..."
+                    : <p className="text-black text-2xl font-medium " >cargando...</p>
             }
             <button className="mt-14 w-[100%]">Comprar</button>
         </div>

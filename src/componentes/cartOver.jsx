@@ -35,9 +35,10 @@ export const Card = ({img}) => {
                 <p className="text-black font-medium text-xl" > <span className="text-2xl" >Precio:</span> <span className="text-green-500">${elemento.datos.Precio}</span></p>
               </div>
             ))
-              : "Eso no funciona ajjajaja"
+              : <p className="text-black text-2xl font-medium " >cargando...</p>
           }
           <button className="mt-14 w-[100%]">Comprar</button>
+          
         </div>
     )
 }
