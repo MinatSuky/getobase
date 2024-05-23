@@ -31,7 +31,7 @@ export const Card = () => {
     deleteDoc(docRef)
     setRecargar( surge)
   }
-vvvv
+
   return (
 
 
