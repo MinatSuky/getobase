@@ -4,7 +4,7 @@ import { collection, getFirestore, getDocs, } from "firebase/firestore";
 
 
 
-export const Bmw = ({img}) => {
+export const Bmw = ({ img }) => {
 
     const [carros, setCarros] = useState(null)
     const db = getFirestore(app); //segundo paso, conectrarnos la base de datos
@@ -21,10 +21,8 @@ export const Bmw = ({img}) => {
 
     return (
 
-        <div className="cont rounded-3xl p-5 bg-white">
-            <div className="mb-10 flex justify-center">
-                <img className="rounded-3xl ima" src={img} alt="" width={400} />
-            </div>
+        <div>
+
             {
                 carros && carros.length > 0 ? carros.map((elemt) => (
                     <div>
@@ -40,8 +38,8 @@ export const Bmw = ({img}) => {
                 ))
                     : <p className="text-black text-2xl font-medium " >cargando...</p>
             }
-            <button className="mt-14 w-[100%]">Comprar</button>
         </div>
+
 
     )
 }

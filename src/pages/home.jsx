@@ -10,15 +10,8 @@ export const Home = () => {
     <>
       <div className="flex gap-9 mt-7 justify-center items-end">
         <Card img={img1} />
-        <Card img={img2} />
-        <Card img={img3} />
       </div>
 
-      <div className="flex gap-6 mt-7 justify-center items-end">
-          <Bmw img={img4} />
-          <Bmw img={img4} />
-          <Bmw img={img4} />
-      </div>
     </>
   )
 }
