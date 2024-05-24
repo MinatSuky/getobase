@@ -29,7 +29,7 @@ export const Card = () => {
   const eliminar = async (idBorrado) => {
     const docRef = doc(db, "Ropa", idBorrado)
     deleteDoc(docRef)
-    setRecargar( surge)
+    setRecargar(!recargar)
   }
 
   return (
